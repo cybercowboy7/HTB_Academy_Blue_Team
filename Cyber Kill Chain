@@ -1,1 +1,21 @@
+Cyber Kill Chain: Consists of 7 stages that are non-linear and are conducted in different ways by each attacker
 
+1. Recon
+  - Passive or active information gathering and choosing their targets.
+2. Weaponize
+  - Create malware payload based on target's type of anti-virus and detection systems and establish remote connection for persistence through reboots etc.
+3. Deliver
+  - Deliveres the payload via phishing email, social engineering phone call or other means.
+4. Exploit
+  - Payload is triggered and access/control is maintained by the attacker
+5. Installation
+  - Droppers can drop malware through email attachments, social engineering, or malicious websites
+  - Backdoors give attackers ongoing access to the compromised machine. Can be installed during exploitation or through droppers
+  - Rootkits obscure themselves from anti-virus systems 
+6. Command and Control
+  - Setup remote connections back to the bad actor. 
+  - Ensures that the machine can be connected to via multiple avenues of different malware on the compromised machinein case one is found out
+7. Actions on objectives
+  - Purpose of the attack
+  - Exfiltration of data
+  - Ransomware deployed at the highest security level
