@@ -63,6 +63,33 @@ to bypass whitelisting.
     - Purple Team Excercises
       - Blue and red teams working together to find and fix vulnerabilities
 2. Detection & Analysis
+  PART ONE:
+    - Detection can come from: Employee noticing different behavior, alert from EDS, IDS, Firewall, SIEM), Threat hunting,
+third-party notification
+    - Levels of detection should be categorized in the network:
+      - Network perimeter (using firewalls, internet-facing network intrusion/prevention systems, demilitarized zone.)
+      - Internal Network (local firewalls, host intrusion detection/prevention systems)
+      - Endpoint Level (anti-virus, endpoint detection and response systems)
+      - Application Level (application logs, service logs)
+    - Initial Investigation
+      - Date/Time when incident was reported: who detected or reported it.
+      - How was it detected
+      - What was the incident?
+      - List of impacted systems
+      - Document who accessed the impacted systems and what actions have been taken. Ongoing incident or activity has been stopped
+      - Physical location, operating systems, IP addresses/Hostames, system owner, system's purpose, current state of the system
+      - List of IP addresses, time and date of detection, type of malware, systems impacted, export of malicious files with 
+forensic information on them (such as hashes, copies of the files etc.)
+    - Incident Severity and Extent Questions
+      - What is the exploitation impact?
+      - What are the exploitation requirements?
+      - Can any business-critical systems be affected by the incident?
+      - Are there any suggested remediation steps?
+      - How many systems have been impacted?
+      - Is the exploit being used in the wild?
+      - Does the exploit have any worm-like capabilities
+  PART TWO:
+    - 
 3. Containment, Eradication, and Recovery
 4. Post-Incident Activity
 
