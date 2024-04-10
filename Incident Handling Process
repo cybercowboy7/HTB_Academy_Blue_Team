@@ -89,9 +89,52 @@ forensic information on them (such as hashes, copies of the files etc.)
       - Is the exploit being used in the wild?
       - Does the exploit have any worm-like capabilities
   PART TWO:
-    - 
+    - After initial investigation, we move into 3 part cycle:
+    - IOCs
+      - IP addresses, hashes, file names
+      - Standard languages to report IOCs: Yara, and OpenIOC
+      - Mandiant offers an IOC editor to create or edit IOCs
+    - Compromised Systems
+      - Identify and eliminate false positives
+    - Collection and Analysis
+      - Live response analysis while system is running, shut down analysis?
+      - Once data is collected, go into malware analysis, forensic analysis, memory analysis etc.
+      - Always keep in mind the chain of custody for legal purposes
 3. Containment, Eradication, and Recovery
+  - Containment:
+    - Take action to prevent the spread of the incident
+    - Short-term and long-term containment
+    - Make sure containment is synced across all effected systems at the same time to ensure attackers do not get notified prior to 
+remediation and change their tools and techniques
+    - Short-term Containment examples
+      - Placing a system in separate VLAN
+      - Pulling network cable
+      - Modifying attacker's C2 DNS name to a system under our control or to a non-existent one
+    - Long-term Containment examples:
+      - Changing user passwords
+      - Applying firewall rules
+      - Inserting HIDS
+      - Applying system patches
+      - Shutting down systems
+  - Eradiation:
+    - Removing detected malware from the system
+    - Rebuilding systems
+    - Restoring from backups
+    - Applying additional patches
+    - Additional system hardening
+  - Recovery
+    - Brings systems back to normal operation
+    - Once everything is verified, bring the systems back to production environment and implement intense monitoring and loggins
+    - Look for unusual logons, unusual processes, changes to the registry in locations that are usually modified by malware
 4. Post-Incident Activity
+  - Reporting
+    - What happened and when?
+    - Performance of the team dealing with the incident in regard to plans, playbooks, policies, and procedures
+    - Did the business provide the necessary information and respond promptly to aid in handling the incident?
+    - What can be improved?
+    - What containment/eradication activities were implemented?
+    - What preventative measures should be implemented to mitigate future incidents?
+    - What tools and resources are need for future incidents of similar nature?
 
 Incident Handling Two Main Activities: Investigating and Recovery
 - Discover initial victim machine and develop an incident timeline
