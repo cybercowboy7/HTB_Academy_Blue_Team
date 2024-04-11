@@ -1,0 +1,13 @@
+- Solutions:
+  - Application search
+  - Site search
+  - Enterprise search
+  - Logging
+- Kibana
+  - Visualize
+- Elasticsearch
+  - Store, search & analyze
+- Beats, Logstash
+  - Ingest
+- SaaS (Elastic Cloud), Self Managed (Elastic Cloud Enterprise, Standalone)
+  - Deployment
