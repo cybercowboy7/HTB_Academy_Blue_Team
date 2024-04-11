@@ -20,3 +20,5 @@ indicates the reason for a login failure. In this case, the account is currently
     - Example: event.code:4625 AND user.name: admin*
   - Discover feature: Sift through available data before constructing KQL queries
 
+- The Elastic Common Schema (ECS)
+  - Shared voabulary list for events and logs acrss the ELK stack
