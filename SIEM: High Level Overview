@@ -1,0 +1,5 @@
+1. Gather data from PCs, network devices, servers etc.
+2. Data is agreggated and normalized into one language understood by the SIEM engine
+3. Rules are created in order to alert on certain rules and conditions that are met or alerted on
+4. Alerts are sent via email, text etc. to SOC personnel who can triage and analyze these alerts
+
