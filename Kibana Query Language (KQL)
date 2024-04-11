@@ -18,3 +18,5 @@ indicates the reason for a login failure. In this case, the account is currently
   - Wildcards and Regular Expressions
     - Supports wildcards and regular expressions
     - Example: event.code:4625 AND user.name: admin*
+  - Discover feature: Sift through available data before constructing KQL queries
+
