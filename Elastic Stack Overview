@@ -4,10 +4,23 @@
   - Enterprise search
   - Logging
 - Kibana
-  - Visualize
+  - Visualization for Elasticsearch documents
+  - Utilizes tables, charts, and custom dashboards
 - Elasticsearch
   - Store, search & analyze
+  - JSON-based search engine designed with RESful APIs
+  - Handles indexing, storing and querying
+  - Allows us to conduct queries and perform analytics on log file records processed by Logstash
 - Beats, Logstash
-  - Ingest
+  - Both for Ingestion of data
+  - Logstash
+    - Consolidates data from various sources and normalize them
+    - Operates in three main areasL
+      - Process Input: Input can come from syslog, a TCP socket, reading it from flat files
+      - Transform and enrich log records: Filter plugins allow for more granular formatting options etc.
+      - Send log records to Elasticsearch: Utilizes output plugins to transmit log records to Elasticsearch
+  - Beats
+    - Installed on remote machines to forward logs to Logstash or Elasticsearch directly. 
+    - Simplifies process of collecting data from various sources
 - SaaS (Elastic Cloud), Self Managed (Elastic Cloud Enterprise, Standalone)
   - Deployment
