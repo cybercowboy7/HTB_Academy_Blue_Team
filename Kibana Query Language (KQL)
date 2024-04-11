@@ -1,0 +1,20 @@
+- Designed for searching and analyzing data in Kibana
+- Basic Structure
+  - field:value pairs
+    - field represents data's attribute and the value represents the data you are search for
+    - Example: event.code:4625
+  - Free Text Search
+    - Allows you to search for a specific term across multiple fields without specifying a field name
+    - Example: "svc-sql1"
+  - Logical Operators
+    - Supports AND, OR, NOT
+    - Parentheses can be used to group expressions and control the order of evaluations
+    - Example: event.code:4625 AND winlog.event_data.SubStatus:0XC0000072
+      - Shows events that have the windows event code 4625 and the substatus of 0XC0000072. The substatus
+indicates the reason for a login failure. In this case, the account is currently disabled. 
+  - Comparison Operators
+    - Supports :, :>, :>=, :<, :<=, :!
+    - Example: event.code:4625 AND winlog.event_data.SubStatus:0XC0000072 AND @timestamp >="2023-03-03T00:00:00.000Z" AND @timestamp <= "2023-03-06T23:59:59.999Z"
+  - Wildcards and Regular Expressions
+    - Supports wildcards and regular expressions
+    - Example: event.code:4625 AND user.name: admin*
