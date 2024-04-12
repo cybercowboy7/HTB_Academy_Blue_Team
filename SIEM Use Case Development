@@ -1,1 +1,18 @@
-
+1. Requirements
+  - Purpose or necessity of the use case
+2. Data Points
+  - Identify all data points where the use case may be present.
+  - Example: If the use case is for an alert after 10 login failures within 4 minutes, data points may be 
+anywhere a user account can be used to log in.
+3. Log Validation
+  - Ensure the logs contain pertinent information such as timestamps, user, source, destination etc.
+4. Design
+  - Condition, aggregation, priority
+5. Implementation
+6. Documentation
+  - SOP for working on alerts. Include an escalation matrix on who to notify for escalation
+7. Onboarding
+  - Once it is developed and tested, move into production environment
+8. Testing
+9. Fine Tuning
+  - Continually refine and update use case to maintain accuracy and effectiveness
