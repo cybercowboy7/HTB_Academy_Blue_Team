@@ -1,0 +1,52 @@
+1. Initial Alert Review
+  - Review initial alert: Timestamp, source/destination IP, affected systems, triggering rule/signature
+  - Analyze logs to gain context of the alert
+
+2. Alert Classification
+  - Classify based on severity, impact, and urgency utilizing org's classification system
+
+3. Alert Correlation
+  - Cross-reference with related alerts, events or incidents to identify patterns, similarities, or IOCs
+  - Query the SIEM to gather relevant log data
+  - Leverage threat intel to check for known attack patterns or malware signatures
+
+4. Enrichment of Alert Data
+  - Gather additional information to gain context:
+    - Network packets, memory dumps, file samples
+    - Conduct recon of affected systems for anomalies i.e network connections, processes, file modifications etc.
+
+5. Risk Assessment
+  - Evaluate potential risk and impact to critical assets, data or infrastructure
+
+6. Contextual Analysis
+  - Evaluate security controls in place
+  - Assess the relevant compliance requirements, industry regulations, contractual obligations etc.
+
+7. Incident Response Planning
+  - Initiate an incident response plan if the alert is significant
+
+8. Consultation with IT Operations
+  - Assess the need for additional context or missing information by consulting with IT operations or relevant departments
+
+9. Response Execution
+  - Based on the alert review, risk assessment, and consultation, determine the appropriate response actions
+  - If additional context resolves the alert or identifies it as a non-malicious event, take necessary actions without escalation
+  - If the alert still indicates potential security concerns or requires further investigation, proceed with the incident response actions
+
+10. Escalation
+  - Identifiy triggers for escalation based on org's policies and alert severity:
+    - Triggers may include compromise of critical systems/assets, ongoing attacks, unfamiliar/sophisticated techniques, widespread
+impact, or insider threats
+  - Assess the alert against escalation triggers, considering potential consequences if not escalated
+  - Follow internal escalation process
+  - Provide comprehensive alert summary
+  - Document all communication related to escalation
+  - Case dependant, escalate to external entities
+
+11. Continuous Monitoring
+  - Continuosly monitor the situtation and incident response progress
+  - Maintain open communication with escalated teams
+
+12. De-escalation
+  - Evaluate the need for de-escalation as the incident response progress and the situation is under control
+  - De-escalate when the risk is mitigated, incident is contained, and further escalation is unnecessary
