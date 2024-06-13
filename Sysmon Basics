@@ -1,0 +1,22 @@
+System Monitor (Sysmon):
+- Device driver that remains resident across system reboots to monitor and log system activity to the Windows 
+event log. 
+- Provides detailed information about process creation, network connections, changes to file creation time, and more.
+- Perfect for going beyond the windows event logs and doing a deeper system monitor
+
+Sysmon Primary Components:
+- A Windows service for monitoring system activity.
+- A device driver that assists in capturing the system activity data.
+- An event log to display captured activity data.
+
+List of Sysmon Event IDs: 
+https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+
+
+Sysmon Configuration Procedure:
+https://github.com/SwiftOnSecurity/sysmon-config
+
+https://github.com/olafhartong/sysmon-modular
+
+
+
