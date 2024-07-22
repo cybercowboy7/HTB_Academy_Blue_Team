@@ -138,7 +138,9 @@ Tapping into and utilizing ETW:
 
    - Common (normal) parent child mind-map: https://x.com/SBousseaden/status/1195373669930983424/photo/1
 
-   - 
+   - Parent PID spoofing techniques can bypass Sysmon Events which makes us have a need for ETW.
+
+  
 
 
 
