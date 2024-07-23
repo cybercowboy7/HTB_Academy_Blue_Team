@@ -1,1 +1,15 @@
+Get-WinEvent cmdlet
+
+  - Powershell tool to query Windows Evetn Logs
+
+  - Can retrieve different types of event logs including ETW, Sysmon and Windows Events 
+
+  Get-WinEvent -Listlog * | Select-Object LogName, RecordCount, IsClassicLog, IsClassicLog, IsEnabled, LogMode, LogType
+    - This cmd allows you to list all logs available with pertinent information
+    - Select-Object allows us to parse the selected records to be displayed
+
+  Get-WinEvent -ListProvider * | Format-Table -AutoSize
+    - Retrieves the list of providers and their respective linked logs
+
+
 
