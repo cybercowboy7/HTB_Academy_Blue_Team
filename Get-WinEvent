@@ -11,5 +11,8 @@ Get-WinEvent cmdlet
   Get-WinEvent -ListProvider * | Format-Table -AutoSize
     - Retrieves the list of providers and their respective linked logs
 
+  Get-WinEvent -LogName 'System' -MaxEvents 50 | Select-Object TimeCreated, ID, ProviderName, LevelDisplayName, Message | Format-Table -AutoSize
+    - Retrieves events from the System Log and displays pertinent information
+
 
 
