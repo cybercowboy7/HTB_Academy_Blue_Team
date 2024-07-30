@@ -1,1 +1,2 @@
 
+chainsaw.exe hunt C:\Logs\file.evtx --sigma C:\FilepathToSigmaRule --mapping C:\SigmaMapping
