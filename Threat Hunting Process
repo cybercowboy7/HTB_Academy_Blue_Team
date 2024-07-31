@@ -1,1 +1,63 @@
+THREAT HUNTING PROCESS:
+
+SETTING THE STAGE:
+
+  - PLanning and preparation
+  - Laying out clear targets based on a deep understanding of the threat landscape, business's critical
+requirements, and our threat intelligence insights.
+  - Ensure environment is equipped for effective threat hunting; proper logging across systems and 
+ensuring SIEM, EDR, IDS are correctly set up and tuned.
+  - Stay up to date with recent cyber threats and familiarize with threat actor profiles
+
+
+FORMULATING HYPOTHESES:
+
+  - Make educated predictions that will guide threat hunting
+  - Hypotheses can stem from threat intel, industry updates, alerts from tools, etc.
+
+
+DESIGNING THE HUNT:
+
+  - Develop a hunting strategy to include data sources that need analysis, methodolgies and tools to be used, particular IOCs
+or patterns to look for.
+  - Create custom scripts or queries and utilize dedicated threat hunting tools
+
+
+DATA GATHERING AND EXAMINATION:
+
+  - Collect necessary data;
+    - log files
+    - network traffic captures
+    - endpoint logs
+  - apply statistical, behavioral or signature based analysis 
+
+
+EVALUATING FINDINGS AND TESTING HYPOTHESES:
+
+  - Interpret results of analysis
+  - Identify affected systems
+  - Determine potential impact of the threat
+
+
+MITIGATING THREATS:
+
+  - Implement remedial actions;
+    - isolate affected systems
+    - employ endpoint protection tools
+
+
+AFTER THE HUNT:
+
+  - Document and share the findings, methods and outcomes
+    - updating threat intelligence platforms
+    - enhancing detection rules 
+    - refining incident response playbooks
+    - improving security policies
+
+
+CONTINUOUS LEARNING AND ENHANCEMENT:
+
+  - Each threat hunting cycle should feed into the next
+    - allows for continuous improvement of hypotheses, methodologies, and tools
+
 
