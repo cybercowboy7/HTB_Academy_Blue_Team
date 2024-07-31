@@ -44,3 +44,20 @@ WHEN SHOULD THREAT HUNTING TAKE PLACE:
 - Periodic Proactive Actions
 
 
+RELATIONSHIP BETWEEN RISK ASSESSMENT AND THREAT HUNTING:
+
+- Prioritizing Hunting Efforts: By recognizing the most critical assets (often referred to as 'crown jewels') and their associated risks, we can prioritize our threat hunting efforts on these areas. Assets could include sensitive 
+data repositories, mission-critical applications, or key network infrastructure.
+
+- Understanding Threat Landscape: The threat identification step of the risk assessment allows us to understand the threat landscape better, including the Tactics, Techniques, and Procedures (TTPs) used by potential threat actors
+
+- Highlighting Vulnerabilities: Risk assessment helps to highlight vulnerabilities in our systems, applications, and processes. Knowing these weaknesses enables us to look for exploitation indicators in these areas. For instance, if we 
+know a particular application has a vulnerability that allows for privilege escalation, we can look for anomalies in user privilege levels.
+
+- Informing the Use of Threat Intelligence: Threat intelligence is often used in threat hunting to identify patterns of malicious behavior. Risk assessment helps inform the application of threat intelligence by identifying the most likely 
+threat actors and their preferred methods of attack.
+
+- Refining Incident Response Plans: Risk assessment also plays a critical role in refining Incident Response (IR) plans. Understanding the likely risks helps us anticipate and plan for potential breaches, ensuring a swift and effective response.
+
+- Enhancing Cybersecurity Controls: Lastly, the risk mitigation strategies derived from risk assessment can directly feed into enhancing existing cybersecurity controls and defenses, further strengthening the organization’s security posture.
+
