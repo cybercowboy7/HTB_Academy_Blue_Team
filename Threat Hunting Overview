@@ -1,1 +1,46 @@
+- Acive, human-led, and often hypothesis-driven practive that systematically combs through network data to identify stealthy, advanced threats
+that evade existing security solutions. This is a PRO-active approach to security versus a REACTIVE approach
+
+- Reduces dwell time of a security breach by detecing malicious activity in the earliest stages of the cyber kill chain
+
+THREAT HUNTING PROCESS:
+
+- Identification of assets (systems or data) that could be high-value targets for threat actors.
+
+KEY facets of threat hunting:
+- An offensive, proactive strategy that prioritizes threat anticipation over reaction, based on hypotheses, attacker TTPs, and intelligence.
+
+- An offensive, reactive response that searches across the network for artifacts related to a verified incident, based on evidence and intelligence.
+
+- A solid, practical comprehension of threat landscape, cyber threats, adversarial TTPs, and the cyber kill chain.
+
+- Cognitive empathy with the attacker, fostering an understanding of the adversarial mindset.
+
+- A profound knowledge of the organization's IT environment, network topology, digital assets, and normal activity.
+
+- Utilization of high-fidelity data and tactical analytics, and leveraging advanced threat hunting tools and platforms.
+
+INCIDENT HANDLING IN TANDEM WITH THREAT HUNTING:  Whether these processes should be integrated or function independently is a strategic decision, contingent upon each organization's unique threat landscape, risk, etc.
+
+- PREPARATION PHASE: threat hunting team must set up robust, clear rules of engagement. Operational protocols must be established, 
+outlining when and how to intervene, the course of action in specific scenarios, and so forth.
+
+- DETECTION & ANALYSIS: They can augment investigations, ascertain whether the observed indicators of compromise (IoCs) truly signify an incident, and further, 
+their adversarial mindset can help uncover additional artifacts or IoCs that might have been missed initially.
+
+- CONTAINMENT, ERADICATION, AND RECOVERY: The specific roles and responsibilities of the hunting team will be stipulated in the procedural documents and security policies.
+
+- POST-INCIDENT ACTIVITY: They can proffer recommendations to fortify the organization's overall security posture.
+
+
+WHEN SHOULD THREAT HUNTING TAKE PLACE:
+
+- When New Information on an Adversary or Vulnerability Comes to Light
+
+- When Multiple Network Anomalies are Detected
+
+- During an Incident Response Activity
+
+- Periodic Proactive Actions
+
 
