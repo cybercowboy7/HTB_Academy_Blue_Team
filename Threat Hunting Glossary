@@ -1,1 +1,19 @@
+TERMINOLOGY/CONCEPTS
+
+- INDICATOR: 
+  - Encompasses both technical data and contextual information.
+  - Isolated technical data lacking relevant context holds limited or negligible value for network defenders
+  - Contextual details give indicators significance, enabling effecitve threat analysis and response
+  - DATA + CONTEXT = INDICATOR
+
+- THREAT:
+  - Intent: Underlying rationale driving adversaries to target and exploit your network infrastructure
+  - Capability: Tools, resources, and financial backing that adversaries posses to carry out their operations successfully. Also includes their skills
+  - Opportunity: Conditions or events that provide favorable circumstanves for adversaries to execute their operations. Includes instances where
+adversaries acquire email, or credentials from your network as well as their awareness of vulnerabilities within specific software systems
+
+- Pyramid of Pain: Visualization of a hierarchy of indicators that support detecting adversaries
+  -  https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html
+  - Focuses SOC teams to be more proactive rather than reactive
+  - Shows us which indicators are going to give the adversary the most problems if we shut it down and detect it
 
