@@ -1,0 +1,71 @@
+Splunk Enterprise architecture:
+
+- Forwarders: Forwarders are responsible for data collection. They gather machine 
+  data from various sources and forward it to the indexers. The types of forwarders 
+  used in Splunk are: 
+    
+    Universal Forwarder (UF): This is a lightweight agent that collects data and forwards 
+    it to the Splunk indexers without any preprocessing. Universal Forwarders are individual 
+    software packages that can be easily installed on remote sources without significantly affecting 
+    network or host performance.
+
+    Heavy Forwarder (HF): This agent serves the purpose of collecting data from remote sources, 
+    especially for intensive data aggregation assignments involving sources like firewalls or data 
+    routing/filtering points. According to Splexicon, heavy forwarders stand out from other types of 
+    forwarders as they parse data before forwarding, allowing them to route data based on specific 
+    criteria such as event source or type. They can also index data locally while simultaneously forwarding 
+    it to another indexer. Typically, Heavy Forwarders are deployed as dedicated "data collection nodes" 
+    for API/scripted data access, and they exclusively support Splunk Enterprise.
+    Please note that there are HTTP Event Collectors (HECs) available for directly collecting data from 
+    applications in a scalable manner. HECs operate by using token-based JSON or raw API methods. In this 
+    process, data is sent directly to the Indexer level for further processing.
+
+- Indexers: The indexers receive data from the forwarders, organize it, and store it in indexes. While indexing 
+  data, the indexers generate sets of directories categorized by age, wherein each directory hold compressed raw 
+  data and corresponding indexes that point to the raw data. They also process search queries from users and 
+  return results.
+
+- Search Heads: Search heads coordinate search jobs, dispatching them to the indexers and merging the results. 
+  They also provide an interface for users to interact with Splunk. On Search Heads, Knowledge Objects can be 
+  crafted to extract supplementary fields and manipulate data without modifying the original index data. It is 
+  important to mention that Search Heads also offer various tools to enrich the search experience, including 
+  reports, dashboards, and visualizations.
+
+- Deployment Server: It manages the configuration for forwarders, distributing apps and updates.
+
+- Cluster Master: The cluster master coordinates the activities of indexers in a clustered environment, ensuring 
+  data replication and search affinity.
+
+- License Master: It manages the licensing details of the Splunk platform.
+
+
+
+
+Splunk's key components:
+
+- Splunk Web Interface: This is the graphical interface through which users can interact with Splunk, carrying out 
+  tasks like searching, creating alerts, dashboards, and reports.
+
+- Search Processing Language (SPL): The query language for Splunk, allowing users to search, filter, and manipulate 
+  the indexed data.
+
+- Knowledge Objects: These include fields, tags, event types, lookups, macros, data models, and alerts that enhance 
+  the data in Splunk, making it easier to search and analyze.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
