@@ -1,3 +1,11 @@
+Splunk Links for Docs:
+https://docs.splunk.com/Documentation/SCS/current/SearchReference/Introduction
+https://docs.splunk.com/Documentation/SplunkCloud/latest/SearchReference/
+https://docs.splunk.com/Documentation/SplunkCloud/latest/Search/
+
+
+
+
 Basic Searching
 
 - Explicit search syntax:
@@ -103,6 +111,92 @@ The rex command
       substrings that begin with { and end with }. The [^%] part ensures that the match 
       does not begin with a % character. The captured value within the curly braces is 
       assigned to the named capture group guid.
+      - table guid displays the extracted GUIDs in the output. This command is used to 
+      format the results and display only the guid field.
+      - The max_match=0 option ensures that all occurrences of the pattern are extracted 
+      from each event. By default, the rex command only extracts the first occurrence.
+
+
+
+
+The lookup command
+
+- enriches data with external sources
+
+- Can create lookup table files in order to 
+
+
+
+The inputlookup command
+
+- retrieves data from a lookup file without joining it to the search results
+
+
+
+
+
+Time range
+
+- Self explanatory
+    index="main" earliest=-7d EventCode!=1
+
+
+
+The transaction command
+
+- Used to group events that share common characteristics into transactions, often used to track sessions or
+user activities that span across multiple events.
+
+
+
+DATA AND FIELD IDENTIFICATION:
+
+| eventcount summarize=false index=* | table index
+
+        - Count all events in all indexes, then summarize=false is used to display counts for each index
+        separately, and finally, the table command presents the data in tabular form
+
+
+
+| metadata type=sourcetypes
+
+        - metadata provides us with various statistics about specified indexed fields
+        - Focusing on sourcetypes here
+        - Lists all souretypes in splunk environment along with additional metadata such as 
+        the first time a source type was seen (firstTime), the last time it was seen (lastTime)
+        and the number of hosts (totalCount).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
