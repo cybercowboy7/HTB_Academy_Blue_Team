@@ -167,21 +167,59 @@ DATA AND FIELD IDENTIFICATION:
         and the number of hosts (totalCount).
 
 
+| metadata type=sourcetypes index=* | table sourcetype
+
+        - retrieves metadata about the data in indexes. The type=sourcetypes argument tells Splunk 
+        to return metadata about sourcetypes. 
+
+
+| metadata type=sources index=* | table source
+
+        - Returns a list of all data sources in Splunk Environment
 
 
 
+sourcetype="WinEventLog:Security" | table *
+
+        - Returns a table with all fields available in the WinEventLog:Security sourcetype.
 
 
 
+sourcetype="WinEventLog:Security" | fields Account_Name, EventCode | table Account_Name, EventCode
 
 
 
+sourcetype="WinEventLog:Security" | fieldsummary
+
+        - Returns a table that includes every field found in the events returned by the search (across the
+        sourcetype we've discussed. The table includes several columns of information about each field:
+
+            - field: name of the field
+            - count: number of events that contain the field
+            - distinct_count: The number of distinct values in the field.
+            - is_exact: Whether the count is exact or estimated.
+            - max: The maximum value of the field.
+            - mean: The mean value of the field.
+            - min: The minimum value of the field.
+            - numeric_count: The number of numeric values in the field.
+            - stdev: The standard deviation of the field.
+            - values: Sample values of the field.
+            - modes: The most common values of the field.
+            - numBuckets: The number of buckets used to estimate the distinct count.
+
+
+index=* sourcetype=* | bucket _time span=1d | stats count by _time, index, sourcetype | sort - _time
+
+        - Retrieves all data, then bucket comman is used to group the events based on the _time field into 
+        one day buckets. The stat command then counts the number of events for each day , index, and sourcetype
+        then sorts it in descending order of _time.
 
 
 
+index=* sourcetype=* | rare limit=10 index, sourcetype
 
-
-
+        - Rare command helps us ID uncommon event types, which might be indicative of abnormal behavior.
+        This query retrieves all data and finds the 10 rarest combinations of indexes and souretypes.
 
 
 
