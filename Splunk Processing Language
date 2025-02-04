@@ -224,7 +224,7 @@ index=* sourcetype=* | rare limit=10 index, sourcetype
 
 
 
-
+index="main" | stats count by sourcetype
 
 
 
