@@ -1,0 +1,11 @@
+Splunk Applications:  
+
+    - Packages that we add to splunk deployments to extend capabilities and manage specific types of operational
+    data.
+
+    - Can be found on Splunkbase
+
+    - Considerations for applications:
+      - Data volume
+      - Hardware requirements
+      - Licensing
