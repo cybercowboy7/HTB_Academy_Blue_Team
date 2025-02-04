@@ -244,6 +244,6 @@ index="main" sourcetype="WinEventLog:Sysmon" EventCode=1 (Image="*cmd.exe" OR Im
 index="main" CallTrace="*UNKNOWN*" | where SourceImage!=TargetImage | stats count by SourceImage
 
 
-
+index="main" EventCode=10 lsass | stats count by SourceImage
 
 
